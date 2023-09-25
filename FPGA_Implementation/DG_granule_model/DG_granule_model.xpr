@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="56" Path="C:/Users/81524/OneDrive - The George Washington University/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_gradual_model/DG_gradual_model.xpr">
+<Project Version="7" Minor="56" Path="C:/Users/81524/OneDrive - The George Washington University/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="2bcaa22ece3a4488986014ddd0bf186f"/>
+    <Option Name="Id" Val="790f56ba92d04c3d844cc9ff3ca57b80"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

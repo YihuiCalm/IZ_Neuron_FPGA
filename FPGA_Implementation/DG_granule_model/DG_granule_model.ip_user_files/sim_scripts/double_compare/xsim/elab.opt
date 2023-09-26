@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot double_compare xil_defaultlib.double_compare xil_defaultlib.glbl -log elaborate.log

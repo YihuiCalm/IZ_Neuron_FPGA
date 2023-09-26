@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Mon Sep 25 21:17:35 2023
+| Date         : Tue Sep 26 13:16:55 2023
 | Host         : LAPTOP-U9EM5UJ6 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file double_sub_utilization_synth.rpt -pb double_sub_utilization_synth.pb
 | Design       : double_sub
@@ -28,20 +28,18 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+----------------------------+------+-------+------------+-----------+-------+
-|          Site Type         | Used | Fixed | Prohibited | Available | Util% |
-+----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  795 |     0 |          0 |     20800 |  3.82 |
-|   LUT as Logic             |  705 |     0 |          0 |     20800 |  3.39 |
-|   LUT as Memory            |   90 |     0 |          0 |      9600 |  0.94 |
-|     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |   90 |     0 |            |           |       |
-| Slice Registers            | 1136 |     0 |          0 |     41600 |  2.73 |
-|   Register as Flip Flop    | 1136 |     0 |          0 |     41600 |  2.73 |
-|   Register as Latch        |    0 |     0 |          0 |     41600 |  0.00 |
-| F7 Muxes                   |   10 |     0 |          0 |     16300 |  0.06 |
-| F8 Muxes                   |    1 |     0 |          0 |      8150 |  0.01 |
-+----------------------------+------+-------+------------+-----------+-------+
++-------------------------+------+-------+------------+-----------+-------+
+|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
++-------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*             |  675 |     0 |          0 |     20800 |  3.25 |
+|   LUT as Logic          |  675 |     0 |          0 |     20800 |  3.25 |
+|   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
+| Slice Registers         |    0 |     0 |          0 |     41600 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |          0 |     41600 |  0.00 |
+|   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
+| F7 Muxes                |   10 |     0 |          0 |     16300 |  0.06 |
+| F8 Muxes                |    1 |     0 |          0 |      8150 |  0.01 |
++-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -60,7 +58,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 1136  |          Yes |       Reset |            - |
+| 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,16 +151,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 1136 |        Flop & Latch |
-| LUT6     |  313 |                 LUT |
-| LUT3     |  218 |                 LUT |
-| LUT4     |  144 |                 LUT |
-| LUT5     |  114 |                 LUT |
-| SRL16E   |   90 |  Distributed Memory |
-| LUT2     |   53 |                 LUT |
-| CARRY4   |   51 |          CarryLogic |
+| LUT6     |  384 |                 LUT |
+| LUT4     |  126 |                 LUT |
+| LUT2     |   92 |                 LUT |
+| LUT3     |   86 |                 LUT |
+| LUT5     |   76 |                 LUT |
+| CARRY4   |   52 |          CarryLogic |
 | MUXF7    |   10 |               MuxFx |
-| LUT1     |    8 |                 LUT |
+| LUT1     |    7 |                 LUT |
 | DSP48E1  |    3 |    Block Arithmetic |
 | MUXF8    |    1 |               MuxFx |
 +----------+------+---------------------+

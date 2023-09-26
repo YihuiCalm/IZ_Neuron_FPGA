@@ -55,15 +55,11 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 double_mul your_instance_name (
-  .aclk(aclk),                                  // input wire aclk
   .s_axis_a_tvalid(s_axis_a_tvalid),            // input wire s_axis_a_tvalid
-  .s_axis_a_tready(s_axis_a_tready),            // output wire s_axis_a_tready
   .s_axis_a_tdata(s_axis_a_tdata),              // input wire [63 : 0] s_axis_a_tdata
   .s_axis_b_tvalid(s_axis_b_tvalid),            // input wire s_axis_b_tvalid
-  .s_axis_b_tready(s_axis_b_tready),            // output wire s_axis_b_tready
   .s_axis_b_tdata(s_axis_b_tdata),              // input wire [63 : 0] s_axis_b_tdata
   .m_axis_result_tvalid(m_axis_result_tvalid),  // output wire m_axis_result_tvalid
-  .m_axis_result_tready(m_axis_result_tready),  // input wire m_axis_result_tready
   .m_axis_result_tdata(m_axis_result_tdata)    // output wire [63 : 0] m_axis_result_tdata
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

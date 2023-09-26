@@ -1,0 +1,2 @@
+double_add_sim_netlist.v,verilog,xil_defaultlib,../../../../DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Oct  4 14:27:33 2023
+# Process ID: 30432
+# Current directory: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19980 D:\ADAM_LAB\IZ_Neuron_FPGA\FPGA_Implementation\DG_granule_model\DG_granule_model.xpr
+# Log file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/vivado.log
+# Journal file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model\vivado.jou
+# Running On: LAPTOP-U9EM5UJ6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17007 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.xpr

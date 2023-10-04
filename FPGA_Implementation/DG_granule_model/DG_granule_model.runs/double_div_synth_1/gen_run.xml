@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="double_div_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695749300">
   <File Type="PA-TCL" Name="double_div.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="double_div_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="double_div_reports.tcl"/>
   <File Type="RDS-RDS" Name="double_div.vds"/>
   <File Type="RDS-UTIL" Name="double_div_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="double_div_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="double_div.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="double_div_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="double_div_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/double_div">
     <File Path="$PSRCDIR/sources_1/ip/double_div/double_div.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

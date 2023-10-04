@@ -20,35 +20,39 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module DG_granule_model_tb();
-    
-    reg clk      = 1'b0;
-    reg rstn     = 1'b1;
-    reg enable   = 1'b0;
-    reg [63:0] i = 64'h0000000000000000;
-    wire [63:0] u;
-    wire [63:0] v;
-    
-    always #1 clk = ~clk;
-    
-    always #2 $display ("v = %d", v);
-    
-    initial begin
-        #100
-        i      = 64'h4084700000000000;
-        enable = 1'b1;
-        
-        #4000
-        $finish;
+module DG_granule_model_tb ();
+
+  reg clk = 1'b0;
+  reg rstp = 1'b0;
+  reg enable = 1'b0;
+  reg [63:0] i[3:0];
+  wire [3:0] spikes;
+
+  reg [1:0] pointer = 2'b00;
+
+  always #1 clk = ~clk;
+
+  always @(posedge clk, posedge rstp) begin
+    if (rstp) begin
+      pointer <= 2'b00;
+    end else begin
+      pointer <= pointer + 2'b01;
     end
-    
-    DG_granule_model u_DG_granule_model(
-    .clk  (clk),
-    .rstn (rstn),
-    .enable(enable),
-    .i    (i),
-    .v    (v),
-    .u    (u)
-    );
-    
+  end
+
+  initial begin
+
+    $readmemh("i_tb_initial.mem", i);
+    #20 enable = 1'b1;
+
+  end
+
+  DG_granule_model u_DG_granule_model (
+      .clk   (clk),
+      .rstp  (rstp),
+      .enable(enable),
+      .i     (i[pointer]),
+      .spikes(spikes)
+  );
+
 endmodule

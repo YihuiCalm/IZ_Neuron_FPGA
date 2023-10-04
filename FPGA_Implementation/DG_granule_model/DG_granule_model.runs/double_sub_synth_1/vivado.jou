@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Tue Sep 26 13:16:18 2023
-# Process ID: 18784
-# Current directory: C:/Users/81524/OneDrive - The George Washington University/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1
+# Start of session at: Wed Oct  4 16:28:41 2023
+# Process ID: 32668
+# Current directory: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1
 # Command line: vivado.exe -log double_sub.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source double_sub.tcl
-# Log file: C:/Users/81524/OneDrive - The George Washington University/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1/double_sub.vds
-# Journal file: C:/Users/81524/OneDrive - The George Washington University/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1\vivado.jou
+# Log file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1/double_sub.vds
+# Journal file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1\vivado.jou
 # Running On: LAPTOP-U9EM5UJ6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17007 MB
 #-----------------------------------------------------------
 source double_sub.tcl -notrace

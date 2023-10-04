@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"DG_granule_model_tb_func_impl.v" \
+"../../../../../DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" \
+
+# Do not sort compile order
+nosort

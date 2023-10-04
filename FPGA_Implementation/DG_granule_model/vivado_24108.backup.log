@@ -1,0 +1,2619 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Oct  4 13:22:35 2023
+# Process ID: 24108
+# Current directory: D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28344 D:\ADAM LAB\IZ_Neuron_FPGA\FPGA_Implementation\DG_granule_model\DG_granule_model.xpr
+# Log file: D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/vivado.log
+# Journal file: D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model\vivado.jou
+# Running On: LAPTOP-U9EM5UJ6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17007 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Xilinx/Vivado/2021.2/scripts/Vivado_init.tcl'
+start_gui
+open_project {D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1539.070 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_single.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_single.v}}
+file delete -force {D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_single.v}
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'double_add'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'double_add'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'double_compare'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'double_compare'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'double_div'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'double_div'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'double_mul'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'double_mul'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'double_sub'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'double_sub'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+export_ip_user_files -of_objects  [get_files {{D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model.v}}
+add_files -norecurse {{D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_single_cycle.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1604.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'v' is not declared [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:46]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v:102]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.223 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top DG_granule_model [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v:6]
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1604.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'v' is not declared [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:46]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:58]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v:102]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1604.223 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1604.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:55]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v:102]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.double_sub
+Compiling module xil_defaultlib.double_div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.double_mul
+Compiling module xil_defaultlib.double_add
+Compiling module xil_defaultlib.double_compare
+Compiling module xil_defaultlib.Izhikevich_model_pipeline_multip...
+Compiling module xil_defaultlib.DG_granule_model
+Compiling module xil_defaultlib.DG_granule_model_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DG_granule_model_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DG_granule_model_tb_behav -key {Behavioral:sim_1:Functional:DG_granule_model_tb} -tclbatch {DG_granule_model_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source DG_granule_model_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1626.211 ; gain = 13.957
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1626.211 ; gain = 21.988
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DG_granule_model_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 1626.211 ; gain = 21.988
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/vivado_pid24108.debug)
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DG_granule_model_tb/u_DG_granule_model/u_Izhikevich_model_pipeline_multiple/v_reg}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DG_granule_model_tb/u_DG_granule_model/u_Izhikevich_model_pipeline_multiple/u_reg}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DG_granule_model_tb/u_DG_granule_model/u_Izhikevich_model_pipeline_multiple/i}} 
+run 300 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 1643.953 ; gain = 0.734
+run all
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 1644.742 ; gain = 0.789
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DG_granule_model_tb/u_DG_granule_model/u_Izhikevich_model_pipeline_multiple/spikes}} 
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 93476 KB (Peak: 93476 KB), Simulation CPU Usage: 34968 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:55]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'spikes' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v:102]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.double_sub
+Compiling module xil_defaultlib.double_div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.double_mul
+Compiling module xil_defaultlib.double_add
+Compiling module xil_defaultlib.double_compare
+Compiling module xil_defaultlib.Izhikevich_model_pipeline_multip...
+Compiling module xil_defaultlib.DG_granule_model
+Compiling module xil_defaultlib.DG_granule_model_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DG_granule_model_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1644.742 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1644.742 ; gain = 0.000
+Time resolution is 1 ps
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1648.332 ; gain = 3.590
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1648.332 ; gain = 3.590
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 1648.332 ; gain = 3.590
+run 300 ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 1648.500 ; gain = 0.098
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 93244 KB (Peak: 93244 KB), Simulation CPU Usage: 12749 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1648.500 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1648.500 ; gain = 0.000
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.double_sub
+Compiling module xil_defaultlib.double_div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.double_mul
+Compiling module xil_defaultlib.double_add
+Compiling module xil_defaultlib.double_compare
+Compiling module xil_defaultlib.Izhikevich_model_pipeline_multip...
+Compiling module xil_defaultlib.DG_granule_model
+Compiling module xil_defaultlib.DG_granule_model_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DG_granule_model_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1648.500 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1648.500 ; gain = 0.000
+Time resolution is 1 ps
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1648.945 ; gain = 0.445
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1648.945 ; gain = 0.445
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.945 ; gain = 0.445
+run 300 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:03:13 . Memory (MB): peak = 1649.031 ; gain = 0.086
+INFO: [Common 17-344] 'run' was cancelled
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DG_granule_model_tb/spikes[3]}} {{/DG_granule_model_tb/spikes[2]}} {{/DG_granule_model_tb/spikes[1]}} {{/DG_granule_model_tb/spikes[0]}} 
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 95100 KB (Peak: 95100 KB), Simulation CPU Usage: 106936 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v:6]
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1776.781 ; gain = 1.965
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'i' on this module [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:54]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1776.781 ; gain = 1.965
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1776.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'i' is not declared [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v:45]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1776.781 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DG_granule_model_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/v_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/u_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [SIM-utils-43] Exported 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/i_tb_initial.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_compare/double_compare_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_compare
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized0_2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized1_3
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_compare_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_eq_im__parameterized0_0
+INFO: [VRFC 10-311] analyzing module double_compare_compare_gt
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im
+INFO: [VRFC 10-311] analyzing module double_compare_compare_ne_im_1
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_compare_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_compare_fp_cmp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_sub/double_sub_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_sub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub
+INFO: [VRFC 10-311] analyzing module double_sub_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_sub_align_add
+INFO: [VRFC 10-311] analyzing module double_sub_alignment
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_sub_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_sub_compare
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt
+INFO: [VRFC 10-311] analyzing module double_sub_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_sub_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_sub_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_sub_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_sub_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_sub_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_sub_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_sub_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect
+INFO: [VRFC 10-311] analyzing module double_sub_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_sub_zero_det_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_mul/double_mul_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_mul
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized0_3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_mul_compare_eq_im_2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper_0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized2
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized3
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized4
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized5
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized6
+INFO: [VRFC 10-311] analyzing module double_mul_dsp48e1_wrapper__parameterized7
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult
+INFO: [VRFC 10-311] analyzing module double_mul_fix_mult_dsp48e1_dbl
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_mul_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_mul_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_exp
+INFO: [VRFC 10-311] analyzing module double_mul_flt_mult_round
+INFO: [VRFC 10-311] analyzing module double_mul_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_mul_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect
+INFO: [VRFC 10-311] analyzing module double_mul_special_detect_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_div/double_div_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_div
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_100
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_101
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_102
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_103
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_104
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_105
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_106
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_107
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_54
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_55
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_56
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_57
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_58
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_59
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_60
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_61
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_62
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_63
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_64
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_65
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_66
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_67
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_68
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_69
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_70
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_71
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_72
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_73
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_74
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_75
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_76
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_77
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_78
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_79
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_80
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_81
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_82
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_83
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_84
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_85
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_86
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_87
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_88
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_89
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_90
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_91
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_92
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_93
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_94
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_95
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_96
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_97
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_98
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain_99
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_div_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_div_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_div_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module double_div_flt_div
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_exp
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_0
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_1
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_10
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_11
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_12
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_13
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_14
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_15
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_16
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_17
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_18
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_19
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_2
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_20
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_21
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_22
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_23
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_24
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_25
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_26
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_27
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_28
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_29
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_3
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_30
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_31
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_32
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_33
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_34
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_35
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_36
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_37
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_38
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_39
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_4
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_40
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_41
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_42
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_43
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_44
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_45
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_46
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_47
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_48
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_49
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_5
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_50
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_51
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_52
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_53
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_6
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_7
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_8
+INFO: [VRFC 10-311] analyzing module double_div_flt_div_mant_addsub_9
+INFO: [VRFC 10-311] analyzing module double_div_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_div_renorm_and_round_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_granule_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Izhikevich_model_pipeline_multiple
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DG_granule_model_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim/glbl.v:6]
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1776.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.double_sub
+Compiling module xil_defaultlib.double_div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.double_mul
+Compiling module xil_defaultlib.double_add
+Compiling module xil_defaultlib.double_compare
+Compiling module xil_defaultlib.Izhikevich_model_pipeline_multip...
+Compiling module xil_defaultlib.DG_granule_model
+Compiling module xil_defaultlib.DG_granule_model_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DG_granule_model_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 1776.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DG_granule_model_tb_behav -key {Behavioral:sim_1:Functional:DG_granule_model_tb} -tclbatch {DG_granule_model_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source DG_granule_model_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DG_granule_model_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 1796.133 ; gain = 19.352
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/DG_granule_model_tb/u_DG_granule_model/u_Izhikevich_model_pipeline_multiple/v_reg}} 
+run 300 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1798.285 ; gain = 1.777
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1798.285 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 94704 KB (Peak: 94704 KB), Simulation CPU Usage: 20562 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DG_granule_model_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module double_add
+INFO: [VRFC 10-311] analyzing module double_add_addsub
+INFO: [VRFC 10-311] analyzing module double_add_addsub_dsp
+INFO: [VRFC 10-311] analyzing module double_add_align_add
+INFO: [VRFC 10-311] analyzing module double_add_alignment
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized0_6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized4_0
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized5_5
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized6_3
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module double_add_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module double_add_compare
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_compare_eq_im__parameterized0_4
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt
+INFO: [VRFC 10-311] analyzing module double_add_compare_gt_2
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized0
+INFO: [VRFC 10-311] analyzing module double_add_dsp48e1_wrapper__parameterized1
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13
+INFO: [VRFC 10-311] analyzing module double_add_floating_point_v7_1_13_viv
+INFO: [VRFC 10-311] analyzing module double_add_flt_add
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_exp
+INFO: [VRFC 10-311] analyzing module double_add_flt_add_logic
+INFO: [VRFC 10-311] analyzing module double_add_flt_dec_op
+INFO: [VRFC 10-311] analyzing module double_add_flt_round_bit
+INFO: [VRFC 10-311] analyzing module double_add_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module double_add_norm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module double_add_special_detect
+INFO: [VRFC 10-311] analyzing module double_add_special_detect_1
+INFO: [VRFC 10-311] analyzing module double_add_zero_det_sel
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'DG_granule_model_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 32 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DG_granule_model_tb_behav xil_defaultlib.DG_granule_model_tb xil_defaultlib.glbl -log elaborate.log 
+Using 32 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.double_sub
+Compiling module xil_defaultlib.double_div
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.double_mul
+Compiling module xil_defaultlib.double_add
+Compiling module xil_defaultlib.double_compare
+Compiling module xil_defaultlib.Izhikevich_model_pipeline_multip...
+Compiling module xil_defaultlib.DG_granule_model
+Compiling module xil_defaultlib.DG_granule_model_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DG_granule_model_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1798.461 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1798.461 ; gain = 0.000
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 1798.461 ; gain = 0.000
+run 300 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1798.621 ; gain = 0.160
+INFO: [Common 17-344] 'run' was cancelled
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/DG_granule_model_tb/u_DG_granule_model/u_Izhikevich_model_pipeline_multiple/v_reg}} 
+run 300 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:31 . Memory (MB): peak = 1798.656 ; gain = 0.035
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 94412 KB (Peak: 94412 KB), Simulation CPU Usage: 24124 ms
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+INFO: [Project 1-1160] Copying file D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1/DG_granule_model.dcp to D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Wed Oct  4 14:26:15 2023] Launched synth_1...
+Run output will be captured here: D:/ADAM LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  4 14:27:10 2023...

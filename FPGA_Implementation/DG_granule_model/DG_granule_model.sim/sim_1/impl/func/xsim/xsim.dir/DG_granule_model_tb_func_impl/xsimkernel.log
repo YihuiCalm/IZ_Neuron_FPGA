@@ -1,0 +1,7 @@
+Running: xsim.dir/DG_granule_model_tb_func_impl/xsimk.exe -simmode gui -wdb DG_granule_model_tb_func_impl.wdb -simrunnum 0 -socket 2195
+Design successfully loaded
+Design Loading Memory Usage: 61772 KB (Peak: 61772 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 97256 KB (Peak: 97256 KB)
+Simulation CPU Usage: 338327 ms

@@ -1,2 +1,2 @@
 Time resolution is 1 ps
-INFO: xsimkernel Simulation Memory Usage: 94412 KB (Peak: 94412 KB), Simulation CPU Usage: 24124 ms
+$finish called at time : 12 ns : File "D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sim_1/new/led_spikes_tb.v" Line 55

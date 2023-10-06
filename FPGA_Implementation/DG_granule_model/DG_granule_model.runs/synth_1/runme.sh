@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log DG_granule_model.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DG_granule_model.tcl
+EAStep vivado -log DG_multiple_led.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DG_multiple_led.tcl

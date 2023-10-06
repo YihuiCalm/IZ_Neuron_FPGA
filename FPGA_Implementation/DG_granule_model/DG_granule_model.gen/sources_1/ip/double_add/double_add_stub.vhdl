@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Wed Oct  4 16:27:13 2023
+-- Date        : Wed Oct  4 16:27:12 2023
 -- Host        : LAPTOP-U9EM5UJ6 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/double_add/double_add_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top double_add -prefix
+--               double_add_ double_add_stub.vhdl
 -- Design      : double_add
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

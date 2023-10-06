@@ -4,14 +4,6 @@ current_instance inst_clk_400/inst
 set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.100
 current_instance
-set_property src_info {type:XDC file:2 line:31 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN U16 IOSTANDARD LVCMOS33} [get_ports {led[0]}]
-set_property src_info {type:XDC file:2 line:32 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports {led[1]}]
-set_property src_info {type:XDC file:2 line:33 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN U19 IOSTANDARD LVCMOS33} [get_ports {led[2]}]
-set_property src_info {type:XDC file:2 line:34 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict {PACKAGE_PIN V19 IOSTANDARD LVCMOS33} [get_ports {led[3]}]
 set_property src_info {type:XDC file:2 line:67 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN U18 IOSTANDARD LVCMOS33} [get_ports btnC]
 set_property src_info {type:XDC file:2 line:68 export:INPUT save:INPUT read:READ} [current_design]

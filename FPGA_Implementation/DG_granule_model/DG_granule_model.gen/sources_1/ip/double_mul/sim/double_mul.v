@@ -116,7 +116,7 @@ output wire [63 : 0] m_axis_result_tdata;
     .C_COMPARE_OPERATION(8),
     .C_LATENCY(0),
     .C_OPTIMIZATION(1),
-    .C_MULT_USAGE(2),
+    .C_MULT_USAGE(3),
     .C_BRAM_USAGE(0),
     .C_RATE(1),
     .C_ACCUM_INPUT_MSB(32),

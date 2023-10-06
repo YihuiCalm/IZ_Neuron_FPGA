@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
+verilog xil_defaultlib  --include "../../../../../DG_granule_model.gen/sources_1/ip/clk_33_3" \
 "DG_granule_model_tb_func_impl.v" \
 "../../../../../DG_granule_model.srcs/sim_1/new/DG_granule_model_tb.v" \
 

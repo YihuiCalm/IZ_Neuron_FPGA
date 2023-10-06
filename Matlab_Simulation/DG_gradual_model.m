@@ -28,13 +28,22 @@ v(1) = Vr;
 u(1) = 0;
 current = I * current;
 
+% for i = 2:length+1
+%     if (v(i-1) >= Vpeak)
+%         v(i) = Vmin;
+%         u(i) = u(i-1) + d;
+%     else
+%         v(i) = v(i-1) + h * ( k * ( v(i-1) - Vr ) * ( v(i-1) - Vt) - u(i-1) + current(i))/C;
+%         u(i) = u(i-1) + h * ( a * ( b * ( v(i-1)-Vr ) - u(i-1) ) );
+%     end
+% end
+
 for i = 2:length+1
-    if (v(i-1) >= Vpeak)
+    v(i) = v(i-1) + h * ( k * ( v(i-1) - Vr ) * ( v(i-1) - Vt) - u(i-1) + current(i))/C;
+    u(i) = u(i-1) + h * ( a * ( b * ( v(i-1)-Vr ) - u(i-1) ) );
+    if (v(i) >= Vpeak)
         v(i) = Vmin;
         u(i) = u(i-1) + d;
-    else
-        v(i) = v(i-1) + h * ( k * ( v(i-1) - Vr ) * ( v(i-1) - Vt) - u(i-1) + current(i))/C;
-        u(i) = u(i-1) + h * ( a * ( b * ( v(i-1)-Vr ) - u(i-1) ) );
     end
 end
 

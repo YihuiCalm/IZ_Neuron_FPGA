@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DG_granule_model_tb_func_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="DG_granule_model_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="293.802988 us"></ZoomEndTime>
+      <Cursor1Time time="1.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="293"></NameColumnWidth>
+      <ValueColumnWidth column_width="127"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/DG_granule_model_tb/spikes" type="array">
+      <obj_property name="ElementShortName">spikes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">spikes[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/clk_33_3" type="logic">
+      <obj_property name="ElementShortName">clk_33_3</obj_property>
+      <obj_property name="ObjectShortName">clk_33_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/DUT_DG_granule_model/u_Izhikevich_model_pipeline_multiple/\v_reg_reg[0] " type="array">
+      <obj_property name="ElementShortName">\v_reg_reg[0] [63:0]</obj_property>
+      <obj_property name="ObjectShortName">\v_reg_reg[0] [63:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">53</obj_property>
+      <obj_property name="radix_otherWidth">11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/DUT_DG_granule_model/u_Izhikevich_model_pipeline_multiple/\v_reg_reg[1] " type="array">
+      <obj_property name="ElementShortName">\v_reg_reg[1] [63:0]</obj_property>
+      <obj_property name="ObjectShortName">\v_reg_reg[1] [63:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">53</obj_property>
+      <obj_property name="radix_otherWidth">11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/DUT_DG_granule_model/u_Izhikevich_model_pipeline_multiple/\v_reg_reg[2] " type="array">
+      <obj_property name="ElementShortName">\v_reg_reg[2] [63:0]</obj_property>
+      <obj_property name="ObjectShortName">\v_reg_reg[2] [63:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">53</obj_property>
+      <obj_property name="radix_otherWidth">11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/DUT_DG_granule_model/u_Izhikevich_model_pipeline_multiple/\v_reg_reg[3] " type="array">
+      <obj_property name="ElementShortName">\v_reg_reg[3] [63:0]</obj_property>
+      <obj_property name="ObjectShortName">\v_reg_reg[3] [63:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">53</obj_property>
+      <obj_property name="radix_otherWidth">11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DG_granule_model_tb/DUT_DG_granule_model/u_Izhikevich_model_pipeline_multiple/h_DIV_C/s_axis_a_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_a_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_a_tdata[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">53</obj_property>
+      <obj_property name="radix_otherWidth">11</obj_property>
+   </wvobject>
+</wave_config>

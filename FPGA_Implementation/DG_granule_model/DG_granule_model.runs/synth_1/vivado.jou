@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Wed Oct  4 16:29:46 2023
-# Process ID: 32696
+# Start of session at: Fri Oct  6 13:00:05 2023
+# Process ID: 29044
 # Current directory: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1
-# Command line: vivado.exe -log DG_granule_model.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DG_granule_model.tcl
-# Log file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1/DG_granule_model.vds
+# Command line: vivado.exe -log DG_multiple_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DG_multiple_led.tcl
+# Log file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1/DG_multiple_led.vds
 # Journal file: D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/synth_1\vivado.jou
 # Running On: LAPTOP-U9EM5UJ6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17007 MB
 #-----------------------------------------------------------
-source DG_granule_model.tcl -notrace
+source DG_multiple_led.tcl -notrace

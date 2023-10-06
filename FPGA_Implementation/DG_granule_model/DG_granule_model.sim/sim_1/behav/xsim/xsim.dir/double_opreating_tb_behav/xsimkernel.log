@@ -1,7 +1,0 @@
-Running: xsim.dir/double_opreating_tb_behav/xsimk.exe -simmode gui -wdb double_opreating_tb_behav.wdb -simrunnum 0 -socket 14997
-Design successfully loaded
-Design Loading Memory Usage: 11492 KB (Peak: 11492 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 12628 KB (Peak: 12628 KB)
-Simulation CPU Usage: 0 ms

@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696451383" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DG_granule_model.dcp">
-  <File Type="PA-TCL" Name="DG_granule_model.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="DG_granule_model_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="DG_granule_model_reports.tcl"/>
-  <File Type="RDS-RDS" Name="DG_granule_model.vds"/>
-  <File Type="RDS-UTIL" Name="DG_granule_model_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="DG_granule_model_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="DG_granule_model.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="DG_granule_model_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="DG_granule_model_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1696611602" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DG_granule_model.dcp">
+  <File Type="PA-TCL" Name="DG_multiple_led.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="DG_multiple_led_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="DG_multiple_led_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DG_multiple_led.vds"/>
+  <File Type="RDS-UTIL" Name="DG_multiple_led_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DG_multiple_led_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DG_multiple_led.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DG_multiple_led_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DG_multiple_led_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/double_add/double_add.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/double_sub/double_sub.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/double_mul/double_mul.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_33_3_1/clk_33_3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Izhikevich_model_pipeline_multiple.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -18,8 +46,31 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/DG_granule_model.v">
+    <File Path="$PSRCDIR/sources_1/new/led_spikes.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DG_multiple_led.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DG_multiple.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DG_single.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -45,9 +96,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/led.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i_tb_initial.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="DG_granule_model"/>
+      <Option Name="TopModule" Val="DG_multiple_led"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -83,10 +147,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="double_div"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_add"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_sub"/>
-  <BlockFileSet Type="BlockSrcs" Name="clk_400"/>
   <BlockFileSet Type="BlockSrcs" Name="double_compare"/>
-  <BlockFileSet Type="BlockSrcs" Name="double_mul"/>
+  <BlockFileSet Type="BlockSrcs" Name="double_div"/>
 </GenRun>

@@ -77,8 +77,7 @@ module DG_granule_model_tb #(
 
     end
 
-
-    DG_granule_model #(
+    DG_multiple_led #(
         .para_t_step(para_t_step),
         .para_k     (para_k),
         .para_a     (para_a),
@@ -89,10 +88,11 @@ module DG_granule_model_tb #(
         .para_Vr    (para_Vr),
         .para_Vt    (para_Vt),
         .para_Vpeak (para_Vpeak)
-    ) DUT_DG_granule_model (
+    ) DUT_DG_multiple_led (
         .clk (clk),
         .rstp(rstp),
         .led (led)
     );
+
 
 endmodule

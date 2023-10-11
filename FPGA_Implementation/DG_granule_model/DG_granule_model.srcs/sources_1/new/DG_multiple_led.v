@@ -58,7 +58,7 @@ module DG_multiple_led #(
         .clk_in1 (clk)
     );
 
-    // Instatiation of IZ neuron
+    // Instantiation of IZ neuron
     Izhikevich_model_pipeline_multiple #(
         .para_t_step(para_t_step),
         .para_k     (para_k),
@@ -78,7 +78,7 @@ module DG_multiple_led #(
         .spikes(spikes)
     );
 
-    // Instatiation of led module
+    // Instantiation of led module
     led_spikes u_led_spikes (
         .clk   (clk_33_3),
         .rstp  (rstp),

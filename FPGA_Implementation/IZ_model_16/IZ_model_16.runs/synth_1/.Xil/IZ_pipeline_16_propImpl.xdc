@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/constrs_1/imports/FPGA/Basys-3-Master.xdc rfile:../../../IZ_model_16.srcs/constrs_1/imports/FPGA/Basys-3-Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN W5 IOSTANDARD LVCMOS33} [get_ports clk]
+set_property src_info {type:XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN U16 IOSTANDARD LVCMOS33} [get_ports led]
+set_property src_info {type:XDC file:1 line:68 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN U18 IOSTANDARD LVCMOS33} [get_ports rstp]

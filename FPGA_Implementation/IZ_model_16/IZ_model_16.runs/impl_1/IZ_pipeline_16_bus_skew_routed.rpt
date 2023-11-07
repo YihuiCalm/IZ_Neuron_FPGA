@@ -1,0 +1,15 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Fri Nov  3 22:24:06 2023
+| Host         : LAPTOP-U9EM5UJ6 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file IZ_pipeline_16_bus_skew_routed.rpt -pb IZ_pipeline_16_bus_skew_routed.pb -rpx IZ_pipeline_16_bus_skew_routed.rpx
+| Design       : IZ_pipeline_16
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

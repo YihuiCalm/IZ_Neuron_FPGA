@@ -1,0 +1,20 @@
++==============+===============+=============+
+| Launch Clock | Capture Clock | Pin         |
++==============+===============+=============+
+| sys_clk_pin  | sys_clk_pin   | u_reg[9]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[13]/D |
+| sys_clk_pin  | sys_clk_pin   | u_reg[15]/D |
+| sys_clk_pin  | sys_clk_pin   | u_reg[14]/D |
+| sys_clk_pin  | sys_clk_pin   | u_reg[12]/D |
+| sys_clk_pin  | sys_clk_pin   | u_reg[8]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[5]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[7]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[11]/D |
+| sys_clk_pin  | sys_clk_pin   | u_reg[10]/D |
+| sys_clk_pin  | sys_clk_pin   | u_reg[3]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[6]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[1]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[4]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[0]/D  |
+| sys_clk_pin  | sys_clk_pin   | u_reg[2]/D  |
++--------------+---------------+-------------+

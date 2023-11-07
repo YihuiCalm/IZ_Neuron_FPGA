@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sim_1/new/IZ_pipeline_16_tb.v,1698876648,verilog,,,,IZ_pipeline_16_tb,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sim_1/new/fixed_16_2_neurons_synapse_tb.v,1699318206,verilog,,,,fixed_16_2_neurons_synapse_tb,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sim_1/new/fixed_16_synapse_tb.v,1699316304,verilog,,,,fixed_16_synapse_tb,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sim_1/new/test.v,1699042950,verilog,,,,test,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sources_1/new/IZ_pipeline_16.v,1699317730,verilog,,D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sources_1/new/fixed_16_mul.v,,IZ_pipeline_16,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sources_1/new/fixed_16_mul.v,1699043027,verilog,,D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sources_1/new/fixed_16_synapse.v,,fixed_16_mul,,,,,,,,
+D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sources_1/new/fixed_16_synapse.v,1699317166,verilog,,D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/IZ_model_16/IZ_model_16.srcs/sim_1/new/fixed_16_2_neurons_synapse_tb.v,,fixed_16_synapse,,,,,,,,

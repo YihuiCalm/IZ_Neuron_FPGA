@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../IZ_model_16.srcs/sources_1/new/IZ_pipeline_16.v" \
+"../../../../IZ_model_16.srcs/sources_1/new/fixed_16_mul.v" \
+"../../../../IZ_model_16.srcs/sources_1/new/fixed_16_synapse.v" \
+"../../../../IZ_model_16.srcs/sim_1/new/fixed_16_2_neurons_synapse_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+Running: xsim.dir/IZ_pipeline_16_tb_behav/xsimk.exe -simmode gui -wdb IZ_pipeline_16_tb_behav.wdb -simrunnum 0 -socket 9742
+Design successfully loaded
+Design Loading Memory Usage: 7776 KB (Peak: 7776 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 14888 KB (Peak: 14888 KB)
+Simulation CPU Usage: 31 ms

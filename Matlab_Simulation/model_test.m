@@ -1,7 +1,7 @@
 % Simulation of a Spiking Neuron using Izhikevich Neural Model.
 % Ref: https://www.izhikevich.org/publications/spikes.htm
 h = 0.01;
-length = 100/h;
+length = 10/h;
 
 v = zeros(length,1);
 u = zeros(length,1);
@@ -20,7 +20,7 @@ for i = 2:length
     if i < length/10
         I = 0;
     else
-        I = 10;
+        I = 15;
     end
     current(i) = I;
 

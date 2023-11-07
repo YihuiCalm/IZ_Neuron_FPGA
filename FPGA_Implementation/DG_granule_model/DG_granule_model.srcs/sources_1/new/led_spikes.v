@@ -20,19 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module led_spikes (
+module led_spikes #(
+    parameter length = 24'h015555
+) (
     input clk,
     input rstp,
     input [3:0] spikes,
     output reg [3:0] led
 );
 
-    reg [7:0] duty_cycle[7:0];
-    reg [7:0] cycle_counter[7:0];
+    reg [3:0] duty_cycle[7:0];
+    reg [3:0] cycle_counter[7:0];
     reg [23:0] counter;
 
-    reg [7:0] duty_cycle_next[7:0];
-    reg [7:0] cycle_counter_next[7:0];
+    reg [3:0] duty_cycle_next[7:0];
+    reg [3:0] cycle_counter_next[7:0];
     reg [23:0] counter_next;
 
     integer j;
@@ -63,15 +65,15 @@ module led_spikes (
     always @(*) begin
         for (i = 0; i < 4; i = i + 1) begin
             if (spikes[i]) begin
-                duty_cycle_next[i] = 8'hff;
+                duty_cycle_next[i]    = 8'hff;
                 cycle_counter_next[i] = 8'h00;
             end
             else if (duty_cycle[i] == 8'h00) begin
-                duty_cycle_next[i] = 8'h00;
+                duty_cycle_next[i]    = 8'h00;
                 cycle_counter_next[i] = 8'h00;
             end
             else begin
-                if (counter == 24'h015555) begin
+                if (counter == length) begin
                     duty_cycle_next[i] = duty_cycle[i] - 8'h01;
                 end
                 else begin
@@ -94,7 +96,7 @@ module led_spikes (
     end
 
     always @(*) begin
-        if (counter == 24'h015555) begin
+        if (counter == length) begin
             counter_next = 24'd0;
         end
         else begin

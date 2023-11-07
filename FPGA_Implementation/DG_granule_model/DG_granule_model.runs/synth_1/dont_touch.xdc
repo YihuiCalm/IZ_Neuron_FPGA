@@ -3,14 +3,5 @@
 
 # XDC: imports/FPGA/Basys-3-Master.xdc
 
-# IP: ip/double_add/double_add.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==double_add || ORIG_REF_NAME==double_add} -quiet] -quiet
-
-# IP: ip/double_sub/double_sub.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==double_sub || ORIG_REF_NAME==double_sub} -quiet] -quiet
-
-# IP: ip/double_mul/double_mul.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==double_mul || ORIG_REF_NAME==double_mul} -quiet] -quiet
-
 # IP: ip/clk_33_3_1/clk_33_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_33_3 || ORIG_REF_NAME==clk_33_3} -quiet] -quiet

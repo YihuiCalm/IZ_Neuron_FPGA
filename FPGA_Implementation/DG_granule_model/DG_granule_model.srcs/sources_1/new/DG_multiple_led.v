@@ -18,9 +18,25 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
+`ifndef SINGLE_PRECISION
+`define SINGLE_PRECISION
+`endif
 
 module DG_multiple_led #(
+`ifdef SINGLE_PRECISION
+    parameter precision   = 32,
+    parameter para_t_step = 32'h3851B717, // 0.0001
+    parameter para_k      = 32'h3EE4F500,
+    parameter para_a      = 32'h3B56F447,
+    parameter para_b      = 32'h41C3D3CF,
+    parameter para_Vmin   = 32'hC284EE68,
+    parameter para_d      = 32'h42480000,
+    parameter para_C      = 32'h42180000,
+    parameter para_Vr     = 32'hC29ACE4B,
+    parameter para_Vt     = 32'hC2339A28,
+    parameter para_Vpeak  = 32'h4177D5EC
+`else
+    parameter precision   = 64,
     parameter para_t_step = 64'h3EE4F8B588E368F1,
     parameter para_k      = 64'h3FDC9E9FFEF77708,
     parameter para_a      = 64'h3F6ADE88EAFF4E9A,
@@ -31,6 +47,7 @@ module DG_multiple_led #(
     parameter para_Vr     = 64'hC05359C9552312EF,
     parameter para_Vt     = 64'hC046734508F4A5F5,
     parameter para_Vpeak  = 64'h402EFABD77A2DBC8
+`endif
 ) (
     input clk,
     input rstp,
@@ -38,7 +55,7 @@ module DG_multiple_led #(
 );
 
     // Synaptic input signals
-    reg [63:0] i[3:0];
+    reg [precision-1:0] i[3:0];
 
     // Pointer registers for synaptic intput for each neuron
     reg [1:0] pointer;
@@ -55,7 +72,7 @@ module DG_multiple_led #(
     clk_33_3 inst_clk_33_3 (
         .clk_out1(clk_33_3),
         .locked  (locked),
-        .clk_in1 (clk)
+        .clk (clk)
     );
 
     // Instantiation of IZ neuron
@@ -88,7 +105,11 @@ module DG_multiple_led #(
 
     // Initialization of synaptic inputs
     initial begin
+`ifdef SINGLE_PRECISION
+        $readmemh("i_tb_initial_32.mem", i);
+`else
         $readmemh("i_tb_initial.mem", i);
+`endif
     end
 
     // Pointer counter

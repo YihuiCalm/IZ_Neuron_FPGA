@@ -18,10 +18,26 @@
 // Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
-
+`ifndef SINGLE_PRECISION
+`define SINGLE_PRECISION
+`endif
 
 module DG_granule_model_tb #(
-    parameter para_t_step = 64'h3EE4F8B588E368F1,
+`ifdef SINGLE_PRECISION
+    parameter precision   = 32,
+    parameter para_t_step = 32'h3DCCCCCD, // 0.01
+    parameter para_k      = 32'h3EE4F500,
+    parameter para_a      = 32'h3B56F447,
+    parameter para_b      = 32'h41C3D3CF,
+    parameter para_Vmin   = 32'hC284EE68,
+    parameter para_d      = 32'h42480000,
+    parameter para_C      = 32'h42180000,
+    parameter para_Vr     = 32'hC29ACE4B,
+    parameter para_Vt     = 32'hC2339A28,
+    parameter para_Vpeak  = 32'h4177D5EC
+`else
+    parameter precision   = 64,
+    parameter para_t_step = 64'h3F847AE147AE147B, // 0.01
     parameter para_k      = 64'h3FDC9E9FFEF77708,
     parameter para_a      = 64'h3F6ADE88EAFF4E9A,
     parameter para_b      = 64'h40387A79DD11A219,
@@ -31,12 +47,12 @@ module DG_granule_model_tb #(
     parameter para_Vr     = 64'hC05359C9552312EF,
     parameter para_Vt     = 64'hC046734508F4A5F5,
     parameter para_Vpeak  = 64'h402EFABD77A2DBC8
+`endif
 ) ();
 
     reg clk    = 1'b0;
-    reg rstp   = 1'b0;
-    reg enable = 1'b0;
-    reg [63:0] i[3:0];
+    reg rstp   = 1'b1;
+    reg [precision-1:0] i[3:0];
     wire [3:0] led;
 
     reg [1:0] pointer = 2'b00;
@@ -72,8 +88,12 @@ module DG_granule_model_tb #(
 
     initial begin
 
+`ifdef SINGLE_PRECISION
+        $readmemh("i_tb_initial_32.mem", i);
+`else
         $readmemh("i_tb_initial.mem", i);
-        #20 enable = 1'b1;
+`endif
+        #20 rstp = 0;
 
     end
 

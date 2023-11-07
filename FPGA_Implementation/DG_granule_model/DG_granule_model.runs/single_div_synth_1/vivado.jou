@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Oct 18 14:20:37 2023
+# Process ID: 28148
+# Current directory: D:/DG_granule_model/DG_granule_model.runs/single_div_synth_1
+# Command line: vivado.exe -log single_div.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_div.tcl
+# Log file: D:/DG_granule_model/DG_granule_model.runs/single_div_synth_1/single_div.vds
+# Journal file: D:/DG_granule_model/DG_granule_model.runs/single_div_synth_1\vivado.jou
+# Running On: LAPTOP-U9EM5UJ6, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 17007 MB
+#-----------------------------------------------------------
+source single_div.tcl -notrace

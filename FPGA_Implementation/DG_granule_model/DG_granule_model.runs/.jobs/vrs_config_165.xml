@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_33_3_synth_1" LaunchDir="C:/Users/81524/Desktop/New folder/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/clk_33_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_add_synth_1" LaunchDir="C:/Users/81524/Desktop/New folder/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_add_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_compare_synth_1" LaunchDir="C:/Users/81524/Desktop/New folder/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_compare_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_div_synth_1" LaunchDir="C:/Users/81524/Desktop/New folder/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_div_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_mul_synth_1" LaunchDir="C:/Users/81524/Desktop/New folder/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_mul_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="double_sub_synth_1" LaunchDir="C:/Users/81524/Desktop/New folder/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.runs/double_sub_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

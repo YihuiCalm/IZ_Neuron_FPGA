@@ -71,8 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.maxThreads 32
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -95,26 +93,30 @@ read_mem {
   D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/u_initial.mem
   D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/led.mem
   D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/i_tb_initial.mem
+  D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/i_tb_initial_32.mem
+  D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/v_initial_32.mem
+  D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/i_2_tb_initial.mem
+  D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/u_initial_32.mem
 }
 read_verilog -library xil_defaultlib {
   D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/Izhikevich_model_pipeline_multiple.v
   D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/led_spikes.v
   D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/new/DG_multiple_led.v
 }
-read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/double_add/double_add.xci
+read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/clk_33_3_1/clk_33_3.xci
+set_property used_in_implementation false [get_files -all d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/clk_33_3_1/clk_33_3_board.xdc]
+set_property used_in_implementation false [get_files -all d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/clk_33_3_1/clk_33_3.xdc]
+set_property used_in_implementation false [get_files -all d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/clk_33_3_1/clk_33_3_ooc.xdc]
 
-read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/double_sub/double_sub.xci
+read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/single_add/single_add.xci
 
-read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/double_mul/double_mul.xci
+read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/single_mul/single_mul.xci
 
-read_ip -quiet d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/clk_33_3_1/clk_33_3.xci
-set_property used_in_implementation false [get_files -all d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/clk_33_3_1/clk_33_3_board.xdc]
-set_property used_in_implementation false [get_files -all d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/clk_33_3_1/clk_33_3.xdc]
-set_property used_in_implementation false [get_files -all d:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.gen/sources_1/ip/clk_33_3_1/clk_33_3_ooc.xdc]
+read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/single_sub/single_sub.xci
 
-read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/double_compare/double_compare.xci
+read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/single_compare/single_compare.xci
 
-read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/double_div/double_div.xci
+read_ip -quiet D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/sources_1/ip/single_div/single_div.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -132,7 +134,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental D:/ADAM_LAB/IZ_Neuron_FPGA/FPGA_Implementation/DG_granule_model/DG_granule_model.srcs/utils_1/imports/synth_1/DG_granule_model.dcp
+read_checkpoint -auto_incremental -incremental D:/DG_granule_model/DG_granule_model.srcs/utils_1/imports/synth_1/DG_granule_model.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
